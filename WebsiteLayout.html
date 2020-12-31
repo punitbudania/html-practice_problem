@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>website layout</title>
+        <style>
+            body {padding: 2em;}
+
+            .headerContainer
+            {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+                background: chartreuse;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer
+            {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+                background: chartreuse;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer
+            {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center; 
+            }
+
+            .articleItem
+            {
+                flex: 1;
+                text-align: center;
+                background: lavenderblush;
+                padding: 10px;
+                order: 1;
+            }
+
+            .asideItem
+            {
+                background: lemonchiffon;
+                order: 2;
+                flex: 0 0 20vw;
+            }
+            .navItem
+            {
+                background: lightblue;
+                order: 3;
+                flex: 0 0 20vw;
+            }
+        </style>
+    </head>
+    <body>
+       <header class="headerContainer"><h1>HEADER - SAMPLE WEBSITE</h1></header>
+       <div class="mainContainer">
+          <article class="articleItem">
+              <h2>Article:-</h2>
+              <p>In the late summer of that year we lived in a house in a village that looked across 
+                the river and the plain to the mountains. In the bed of the river there were pebbles 
+                and boulders, dry and white in the sun, and the water was clear and swiftly moving 
+                and blue in the channels. Troops went by the house and down the road and the dust 
+                they raised powdered the leaves of the trees.</p>
+          </article>
+          <aside class="asideItem">
+              <h2>Aside:-</h2>
+          </aside>
+          <nav class="navItem">
+              <h2>Nav:-</h2>
+          </nav>
+       </div>
+       <footer class="footerContainer"><h2>FOOTER</h2></footer> 
+    </body>
+</html>
